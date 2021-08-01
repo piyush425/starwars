@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>starwars</title>
+    <style>
+        body{
+            background-image: url('https://i.gifer.com/Ir9.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .searchbox{
+            max-width: 600px;
+    width: 417px;
+    border-radius: 20px;
+    outline: 0;
+    font-size: 16px;
+    background: #2d2f30;
+    color: #f2f2f2;
+    background: #2d2f30;
+        }
+        #main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 12%;
+        }
+        input{
+            border: 0;
+    padding: 0 15px;
+    outline: 0;
+    color: #f2f2f2;
+    font-size: 16px;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    background: #2d2f30;
+    border-radius: 25px;
+    text-align: center;
+        }
+        .show{
+            max-height: 300px;
+    overflow-y: auto;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background:#2d2f30 ;
+    color: #f2f2f2;
+    text-align: center;
+    margin-left: 8%;
+}
+.hover:hover{
+    color: aqua;
+}
+#detail{
+    color: aqua;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    padding-top: 14%;
+}
+.char{
+    color: aqua;
+}
+        
+    </style>
+
+</head>
+<body>
+    <div id="main">
+       <div>
+           <div style="margin-left: 28%;"><img style="width: 200px;"
+            src="https://logodownload.org/wp-content/uploads/2015/12/star-wars-logo-3-1.png"
+            alt="Star Wars Logo"  style="background-color: transparent; "></div>
+    
+    <div>
+            <div class="searchbox"><input oninput="movieSearch()" type="text" name="" id="q" placeholder="search for character"></div>
+    </div>
+    <div class="show">
+        <div id="show"></div>
+    </div>
+        
+    </div>
+    </div>
+    
+    <div id="detail"></div>
+   
+    
+        
+    
+</body>
+</html>
+<script src="starwar.js"></script>
